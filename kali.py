@@ -61,7 +61,7 @@ print("\nładowanie ukończone linux odpalony")
 
 cmd = {
     "nmap": " ",
-    "help": "dostępne komendy to nmap, clear, ping, hack, echo, whoami, scan, ipconfig, exit",
+    "help": "dostępne komendy to nmap, clear, ping, hack, echo, whoami, scan, ipconfig,  exit",
     "exit": "pa pa",
     "clear": " ",
     "ping": " ",
@@ -74,7 +74,9 @@ cmd = {
     "ipconfig": "975.89.775.09",
     "scan": " ",
     "install": " ",
-    "kankulator": " "
+    "kankulator": " ",
+    "zmiana_nazwy_użytkownika": " ",
+    "zmiana_użądzenia": " "
 }
 
 foldery = {
