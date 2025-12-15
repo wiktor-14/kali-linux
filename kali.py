@@ -76,7 +76,8 @@ cmd = {
     "install": " ",
     "kankulator": " ",
     "zmiana_nazwy_użytkownika": " ",
-    "zmiana_użądzenia": " "
+    "zmiana_użądzenia": " ",
+    "gra": " "
 }
 
 foldery = {
@@ -258,9 +259,20 @@ while True:
         dane["user"] = input("podaj nową nazwę użytkownika ")
         with open("coś.json", "w") as f:
             json.dump(dane, f, indent=4)
-    if a == "zmiana_użądzenia":
+    elif a == "zmiana_użądzenia":
         with open("coś.json", "r") as f:
             dane = json.load(f)
         dane["urządzenie"] = input("podaj nowe użądzenie ")
         with open("coś.json", "w") as f:
             json.dump(dane, f, indent=4)
+    elif a == "gra":
+        liczba_gry = random.randint(1, 100)
+        while True:
+            zgadywanie = int(input("podaj swoją liczbę "))
+            if zgadywanie > liczba_gry:
+                print("liczba jest mniejsza")
+            elif zgadywanie < liczba_gry:
+                print("liczba jest większa")
+            else:
+                print("wygrałeś")
+                break
